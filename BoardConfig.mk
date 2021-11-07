@@ -13,12 +13,6 @@ USE_CAMERA_STUB := true
 -include vendor/qcom/proprietary/common/msm8960/BoardConfigVendor.mk
 
 TARGET_USE_HDMI_AS_PRIMARY := false
-
-ifeq ($(TARGET_USE_HDMI_AS_PRIMARY),true)
-    TARGET_HAVE_HDMI_OUT := false
-else
-    TARGET_HAVE_HDMI_OUT := true
-endif # TARGET_USE_HDMI_AS_PRIMARY
 #TODO: Fix-me: Setting TARGET_HAVE_HDMI_OUT to false
 # to get rid of compilation error.
 TARGET_HAVE_HDMI_OUT := false
